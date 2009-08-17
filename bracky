@@ -1,0 +1,25 @@
+$spec = {
+	'(((' => '<',
+	'(()' => '>',
+	'()(' => '.',
+	'())' => ',',
+	')((' => '[',
+	')()' => ']',
+	'))(' => '+',
+	')))' => '-'
+}
+
+#brainfuck = Regexp.new('[' + spec.values.scan(/./).map{|i| "\\#{i}"}.join + ']')
+#bracky = Regexp.new('[' + spec.keys.scan(/./).map{|i| "\\#{i}"}.join + ']')
+
+def to_brainfuck(code)
+	code.scan(/[\(\)]{3}/).map{|o| $spec[o]}.join
+end
+
+def to_bracky(code)
+	code.scan(/[<>\.\,\[\]\+\-]/).map{|o| $spec.find{|k,v| v == o}[0]}.join
+end
+
+reverse = ARGV.delete('-r')
+code = File.read(ARGV[0] || '/dev/stdin')
+puts (reverse ? to_bracky(code) : to_brainfuck(code))

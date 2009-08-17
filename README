@@ -1,0 +1,8 @@
+Bracky extends Brainfuck to a LISP-like state of functional beauty in that everything can, and must, 
+be expressed in a crystal-clear and fundamentally beautiful stream of parentheses.
+
+At this time the reccommended way to learn Bracky is through experimentation, as the author feels 
+that documentation is both unnescessary bloat and a hindrance to expression, as perscription of 
+method is against the free and unencumbered spirit of Bracky.
+
+Contribution from Shane O'Brien is gratefully acknowledged.
