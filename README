@@ -1,8 +1,21 @@
-Bracky extends Brainfuck to a LISP-like state of functional beauty in that everything can, and must, 
-be expressed in a crystal-clear and fundamentally beautiful stream of parentheses.
+--	ABOUT
+
+	Bracky extends Brainfuck to a LISP-like state of functional beauty in that everything can, and 
+must,be expressed in a crystal-clear and fundamentally beautiful stream of parentheses.
 
 At this time the reccommended way to learn Bracky is through experimentation, as the author feels 
 that documentation is both unnescessary bloat and a hindrance to expression, as perscription of 
 method is against the free and unencumbered spirit of Bracky.
 
-Contribution from Shane O'Brien is gratefully acknowledged.
+--	INSTRUCTIONS FOR USE
+
+	1. "bracky" takes a Bracky source file as input (suggested naming convention is 
+"sourcefile.()(").
+	2. A Brainfuck interpreter in Ruby (1.9 and above is suggested) is supplied for your 
+convenience, though any working implemetation should be fine.
+	3. Express yourself
+
+
+--	ADDENDUM
+
+	Contribution from Shane O'Brien is gratefully acknowledged.
